@@ -33,6 +33,7 @@ namespace WebApplication1
                 endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("<h1>Hello World!<h1>");
+                    await context.Response.WriteAsync("<h1>Hello World!<h1> 12345");
                 });
             });
         }
